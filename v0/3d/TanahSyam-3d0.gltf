@@ -1,0 +1,1918 @@
+{
+    "asset" : {
+        "copyright" : "WowGGGearing\\napik\\ttenan",
+        "generator" : "Khronos glTF Blender I/O v3.4.50",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "sceneutama",
+            "nodes" : [
+                2,
+                8,
+                11,
+                14,
+                17,
+                20,
+                23,
+                26
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "b0"
+        },
+        {
+            "extras" : {
+                "geomat" : [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                ],
+                "maxinstance" : 3
+            },
+            "mesh" : 0,
+            "name" : "grid",
+            "skin" : 0
+        },
+        {
+            "children" : [
+                1,
+                0
+            ],
+            "name" : "rangkagrid"
+        },
+        {
+            "name" : "bx",
+            "translation" : [
+                1,
+                0,
+                0
+            ]
+        },
+        {
+            "name" : "by",
+            "translation" : [
+                0,
+                1,
+                0
+            ]
+        },
+        {
+            "name" : "bz",
+            "translation" : [
+                0,
+                0,
+                1
+            ]
+        },
+        {
+            "children" : [
+                3,
+                4,
+                5
+            ],
+            "name" : "b0"
+        },
+        {
+            "extras" : {
+                "geomat" : [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                ],
+                "maxinstance" : 3
+            },
+            "mesh" : 1,
+            "name" : "xyz",
+            "skin" : 1
+        },
+        {
+            "children" : [
+                7,
+                6
+            ],
+            "name" : "rangkaxyz",
+            "translation" : [
+                0,
+                10,
+                0
+            ]
+        },
+        {
+            "name" : "b0"
+        },
+        {
+            "extras" : {
+                "geomat" : [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                ],
+                "maxinstance" : 3
+            },
+            "mesh" : 2,
+            "name" : "titik",
+            "skin" : 2
+        },
+        {
+            "children" : [
+                10,
+                9
+            ],
+            "name" : "rangkatitik",
+            "translation" : [
+                10,
+                10,
+                0
+            ]
+        },
+        {
+            "name" : "b0"
+        },
+        {
+            "extras" : {
+                "geomat" : [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                ],
+                "maxinstance" : 3
+            },
+            "mesh" : 3,
+            "name" : "kotak",
+            "skin" : 3
+        },
+        {
+            "children" : [
+                13,
+                12
+            ],
+            "name" : "rangkakotak",
+            "translation" : [
+                20,
+                10,
+                0
+            ]
+        },
+        {
+            "name" : "b0"
+        },
+        {
+            "extras" : {
+                "geomat" : [
+                    [
+                        50.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        70.0,
+                        0.0,
+                        600.0,
+                        0.0,
+                        1.0
+                    ],
+                    [
+                        30.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        70.0,
+                        0.0,
+                        100.0,
+                        0.0,
+                        1.0
+                    ]
+                ],
+                "maxinstance" : 111
+            },
+            "mesh" : 4,
+            "name" : "gedung0",
+            "skin" : 4
+        },
+        {
+            "children" : [
+                16,
+                15
+            ],
+            "name" : "rangkagedung0",
+            "translation" : [
+                30,
+                10,
+                0
+            ]
+        },
+        {
+            "name" : "b0"
+        },
+        {
+            "extras" : {
+                "geomat" : [
+                    [
+                        99.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        99.0,
+                        0.0,
+                        54.29999542236328,
+                        50.39999771118164,
+                        1.0
+                    ],
+                    [
+                        77.0,
+                        -77.0,
+                        3.0,
+                        77.0,
+                        77.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    [
+                        99.0,
+                        -99.0,
+                        -1.0,
+                        99.0,
+                        99.0,
+                        2.0999999046325684,
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                ],
+                "maxinstance" : 3
+            },
+            "mesh" : 5,
+            "name" : "tanah",
+            "skin" : 5
+        },
+        {
+            "children" : [
+                19,
+                18
+            ],
+            "name" : "rangkatanah"
+        },
+        {
+            "name" : "b0"
+        },
+        {
+            "extras" : {
+                "geomat" : [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                ],
+                "maxinstance" : 222
+            },
+            "mesh" : 6,
+            "name" : "roket",
+            "skin" : 6
+        },
+        {
+            "children" : [
+                22,
+                21
+            ],
+            "name" : "rangkaroket",
+            "translation" : [
+                40,
+                10,
+                0
+            ]
+        },
+        {
+            "name" : "b0"
+        },
+        {
+            "extras" : {
+                "geomat" : [
+                    [
+                        50.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        70.0,
+                        0.0,
+                        300.0,
+                        0.0,
+                        1.0
+                    ],
+                    [
+                        30.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        70.0,
+                        0.0,
+                        600.0,
+                        -50.0,
+                        1.0
+                    ]
+                ],
+                "maxinstance" : 111
+            },
+            "mesh" : 7,
+            "name" : "gedung1",
+            "skin" : 7
+        },
+        {
+            "children" : [
+                25,
+                24
+            ],
+            "name" : "rangkagedung1",
+            "translation" : [
+                50,
+                10,
+                0
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "extras" : {
+                "shadernode" : {
+                    "color" : {
+                        "Group.003" : [
+                            0.0,
+                            0.4000000059604645,
+                            0.0,
+                            1.0
+                        ],
+                        "Group.001" : [
+                            1.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "Group.008" : [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "Group.004" : [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "Group.011" : [
+                            0.0,
+                            0.0,
+                            1.0,
+                            1.0
+                        ],
+                        "Group.012" : [
+                            0.0,
+                            1.0,
+                            0.0,
+                            1.0
+                        ],
+                        "Group.013" : [
+                            1.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "Group.010" : [
+                            0.0,
+                            0.20000000298023224,
+                            0.20000000298023224,
+                            0.0
+                        ],
+                        "Group.005" : [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "Group.017" : [
+                            0.0,
+                            0.0,
+                            1.0,
+                            1.0
+                        ],
+                        "Group.016" : [
+                            1.0,
+                            0.9535430669784546,
+                            0.3977203369140625,
+                            0.49803921580314636
+                        ],
+                        "Group.015" : [
+                            0.2597988247871399,
+                            0.2597988247871399,
+                            0.2597988247871399,
+                            0.0
+                        ],
+                        "Group.006" : [
+                            0.0,
+                            1.0,
+                            0.0,
+                            0.501960813999176
+                        ],
+                        "Group.043" : [
+                            0.9166935682296753,
+                            1.0,
+                            0.5109003186225891,
+                            0.49803921580314636
+                        ],
+                        "Group.039" : [
+                            0.9445029497146606,
+                            1.0,
+                            0.11142463982105255,
+                            0.20000000298023224
+                        ],
+                        "Group.038" : [
+                            1.0,
+                            0.7777957916259766,
+                            0.0,
+                            0.05000000074505806
+                        ],
+                        "Group.026" : [
+                            1.0,
+                            0.688136100769043,
+                            0.3735843896865845,
+                            1.0
+                        ],
+                        "Group.023" : [
+                            1.0,
+                            0.7818819880485535,
+                            0.4969330132007599,
+                            1.0
+                        ],
+                        "Group.029" : [
+                            0.8688874244689941,
+                            0.5987082123756409,
+                            0.32590916752815247,
+                            1.0
+                        ],
+                        "Group.030" : [
+                            0.8006573915481567,
+                            0.6489222049713135,
+                            0.47040876746177673,
+                            1.0
+                        ],
+                        "Group.027" : [
+                            0.7873942852020264,
+                            0.7873942852020264,
+                            0.7873942852020264,
+                            1.0
+                        ],
+                        "Group.021" : [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "Group.036" : [
+                            0.5382207632064819,
+                            0.5382207632064819,
+                            0.5382207632064819,
+                            1.0
+                        ],
+                        "Group.033" : [
+                            0.8970873951911926,
+                            0.547232449054718,
+                            0.6997519731521606,
+                            1.0
+                        ],
+                        "Group.037" : [
+                            1.0,
+                            0.6747179627418518,
+                            0.38305094838142395,
+                            1.0
+                        ],
+                        "Group.022" : [
+                            0.24620112776756287,
+                            0.24620117247104645,
+                            0.24620139598846436,
+                            1.0
+                        ],
+                        "Group.040" : [
+                            1.0,
+                            0.6561666131019592,
+                            0.0,
+                            0.012500000186264515
+                        ],
+                        "Group.049" : [
+                            0.0,
+                            0.7356518507003784,
+                            0.7356518507003784,
+                            1.0
+                        ],
+                        "Group.051" : [
+                            0.0,
+                            1.0,
+                            1.0,
+                            0.49803921580314636
+                        ],
+                        "Group.047" : [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "Group.048" : [
+                            0.6053202152252197,
+                            0.7483950257301331,
+                            0.7483950257301331,
+                            1.0
+                        ]
+                    },
+                    "matrix" : {
+                        "matku0" : [
+                            1.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0,
+                            0.0,
+                            0.0,
+                            0.3333333432674408,
+                            1.0
+                        ],
+                        "matku1" : [
+                            1.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0,
+                            0.0,
+                            0.0,
+                            -0.3333333432674408,
+                            1.0
+                        ],
+                        "matku2" : [
+                            0.0,
+                            -0.75,
+                            0.0,
+                            1.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "matkotak" : [
+                            99.0,
+                            99.0,
+                            0.0,
+                            -99.0,
+                            99.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "matkotak.002" : [
+                            99.0,
+                            -55.0,
+                            0.0,
+                            55.0,
+                            99.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "matatap" : [
+                            9.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            9.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "mat.002" : [
+                            0.0,
+                            -1.0,
+                            0.0,
+                            1.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            100.0,
+                            1.0
+                        ],
+                        "mat.001" : [
+                            0.0,
+                            -1.0,
+                            0.0,
+                            1.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            500.0,
+                            1.0
+                        ],
+                        "mattanah" : [
+                            3.0,
+                            3.0,
+                            0.0,
+                            -3.0,
+                            3.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "mattanah.001" : [
+                            8.0,
+                            8.0,
+                            0.0,
+                            -8.0,
+                            8.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "matapi.002" : [
+                            77.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            11.0,
+                            0.0,
+                            0.0,
+                            -3.0,
+                            1.0
+                        ],
+                        "matapi" : [
+                            77.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            11.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "matapi.001" : [
+                            77.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            11.0,
+                            0.0,
+                            0.0,
+                            3.0,
+                            1.0
+                        ],
+                        "mat" : [
+                            0.0,
+                            -1.0,
+                            0.0,
+                            1.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            300.0,
+                            1.0
+                        ],
+                        "matide" : [
+                            1.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "mat jendela televev" : [
+                            0.05000000074505806,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.009999999776482582,
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ]
+                    },
+                    "mathcurve" : {
+                        "grupakhir" : {
+                            "A" : "grupkuuuuu",
+                            "B" : "Group.001",
+                            "matrix" : "matku2",
+                            "curveid" : 1
+                        },
+                        "grupkuuuuu" : {
+                            "A" : "Group.007",
+                            "B" : "Group.003",
+                            "matrix" : "matku1",
+                            "curveid" : 0
+                        },
+                        "Group.007" : {
+                            "A" : "Group.008",
+                            "B" : "Group.004",
+                            "matrix" : "matku0",
+                            "curveid" : 0
+                        },
+                        "Group.009" : {
+                            "A" : "Group.005",
+                            "B" : "Group.010",
+                            "matrix" : "matide",
+                            "curveid" : 1
+                        },
+                        "Group.014" : {
+                            "A" : "Group.006",
+                            "B" : "Group.015",
+                            "matrix" : "matkotak",
+                            "curveid" : 3
+                        },
+                        "Group.018" : {
+                            "A" : "Group.017",
+                            "B" : "Group.016",
+                            "matrix" : "matkotak",
+                            "curveid" : 2
+                        },
+                        "Group.019" : {
+                            "A" : "Group.014",
+                            "B" : "Group.018",
+                            "matrix" : "matkotak.002",
+                            "curveid" : 6
+                        },
+                        "Group.035" : {
+                            "A" : "Group.036",
+                            "B" : "Group.021",
+                            "matrix" : "mat.002",
+                            "curveid" : 2
+                        },
+                        "Group.034" : {
+                            "A" : "Group.037",
+                            "B" : "Group.033",
+                            "matrix" : "mat.001",
+                            "curveid" : 2
+                        },
+                        "Group.028" : {
+                            "A" : "Group.029",
+                            "B" : "Group.030",
+                            "matrix" : "mattanah.001",
+                            "curveid" : 8
+                        },
+                        "Group.025" : {
+                            "A" : "Group.026",
+                            "B" : "Group.023",
+                            "matrix" : "matide",
+                            "curveid" : 8
+                        },
+                        "Group.044" : {
+                            "A" : "Group.043",
+                            "B" : "Group.039",
+                            "matrix" : "matapi.001",
+                            "curveid" : 2
+                        },
+                        "Group.041" : {
+                            "A" : "Group.044",
+                            "B" : "Group.042",
+                            "matrix" : "matapi",
+                            "curveid" : 2
+                        },
+                        "Group.042" : {
+                            "A" : "Group.038",
+                            "B" : "Group.040",
+                            "matrix" : "matapi.002",
+                            "curveid" : 2
+                        },
+                        "Group.031" : {
+                            "A" : "Group.025",
+                            "B" : "Group.028",
+                            "matrix" : "mattanah",
+                            "curveid" : 8
+                        },
+                        "Group.024" : {
+                            "A" : "Group.021",
+                            "B" : "Group.027",
+                            "matrix" : "matatap",
+                            "curveid" : 8
+                        },
+                        "Group.020" : {
+                            "A" : "Group.032",
+                            "B" : "Group.022",
+                            "matrix" : "matide",
+                            "curveid" : 6
+                        },
+                        "Group.032" : {
+                            "A" : "Group.034",
+                            "B" : "Group.035",
+                            "matrix" : "mat",
+                            "curveid" : 2
+                        },
+                        "Group.045" : {
+                            "A" : "Group.046",
+                            "B" : "Group.050",
+                            "matrix" : "matide",
+                            "curveid" : 6
+                        },
+                        "Group.046" : {
+                            "A" : "Group.047",
+                            "B" : "Group.048",
+                            "matrix" : "mat",
+                            "curveid" : 2
+                        },
+                        "Group.050" : {
+                            "A" : "Group.049",
+                            "B" : "Group.051",
+                            "matrix" : "mat jendela televev",
+                            "curveid" : 6
+                        }
+                    },
+                    "mathcurveoutput" : [
+                        "Group.009",
+                        "Group.013",
+                        "Group.012",
+                        "Group.011",
+                        "Group.019",
+                        "Group.020",
+                        "Group.024",
+                        "Group.031",
+                        "Group.041",
+                        "Group.045"
+                    ]
+                }
+            },
+            "name" : "materialutama",
+            "pbrMetallicRoughness" : {}
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "meshgrid",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "TEXCOORD_0" : 1,
+                        "TEXCOORD_1" : 2,
+                        "NORMAL" : 3,
+                        "JOINTS_0" : 4,
+                        "WEIGHTS_0" : 5
+                    },
+                    "indices" : 6,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "meshxyz",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 8,
+                        "TEXCOORD_0" : 9,
+                        "TEXCOORD_1" : 10,
+                        "NORMAL" : 11,
+                        "JOINTS_0" : 12,
+                        "WEIGHTS_0" : 13
+                    },
+                    "indices" : 14,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "meshtitik",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 16,
+                        "TEXCOORD_0" : 17,
+                        "TEXCOORD_1" : 18,
+                        "NORMAL" : 19,
+                        "JOINTS_0" : 20,
+                        "WEIGHTS_0" : 21
+                    },
+                    "indices" : 22,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "meshkotak",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 24,
+                        "TEXCOORD_0" : 25,
+                        "TEXCOORD_1" : 26,
+                        "NORMAL" : 27,
+                        "JOINTS_0" : 28,
+                        "WEIGHTS_0" : 29
+                    },
+                    "indices" : 30,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "meshgedung0",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 32,
+                        "TEXCOORD_0" : 33,
+                        "TEXCOORD_1" : 34,
+                        "NORMAL" : 35,
+                        "JOINTS_0" : 36,
+                        "WEIGHTS_0" : 37
+                    },
+                    "indices" : 30,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "meshtanah",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 39,
+                        "TEXCOORD_0" : 40,
+                        "TEXCOORD_1" : 41,
+                        "NORMAL" : 42,
+                        "JOINTS_0" : 43,
+                        "WEIGHTS_0" : 44
+                    },
+                    "indices" : 45,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "meshroket",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 46,
+                        "TEXCOORD_0" : 47,
+                        "TEXCOORD_1" : 48,
+                        "NORMAL" : 49,
+                        "JOINTS_0" : 50,
+                        "WEIGHTS_0" : 51
+                    },
+                    "indices" : 52,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "meshgedung1",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 54,
+                        "TEXCOORD_0" : 55,
+                        "TEXCOORD_1" : 56,
+                        "NORMAL" : 57,
+                        "JOINTS_0" : 58,
+                        "WEIGHTS_0" : 59
+                    },
+                    "indices" : 60,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "skins" : [
+        {
+            "inverseBindMatrices" : 7,
+            "joints" : [
+                0
+            ],
+            "name" : "rangkagrid"
+        },
+        {
+            "inverseBindMatrices" : 15,
+            "joints" : [
+                6,
+                3,
+                4,
+                5
+            ],
+            "name" : "rangkaxyz"
+        },
+        {
+            "inverseBindMatrices" : 23,
+            "joints" : [
+                9
+            ],
+            "name" : "rangkatitik"
+        },
+        {
+            "inverseBindMatrices" : 31,
+            "joints" : [
+                12
+            ],
+            "name" : "rangkakotak"
+        },
+        {
+            "inverseBindMatrices" : 38,
+            "joints" : [
+                15
+            ],
+            "name" : "rangkagedung0"
+        },
+        {
+            "inverseBindMatrices" : 7,
+            "joints" : [
+                18
+            ],
+            "name" : "rangkatanah"
+        },
+        {
+            "inverseBindMatrices" : 53,
+            "joints" : [
+                21
+            ],
+            "name" : "rangkaroket"
+        },
+        {
+            "inverseBindMatrices" : 61,
+            "joints" : [
+                24
+            ],
+            "name" : "rangkagedung1"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 121,
+            "max" : [
+                200,
+                0,
+                200
+            ],
+            "min" : [
+                -200,
+                0,
+                -200
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 121,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 121,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5126,
+            "count" : 121,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5121,
+            "count" : 121,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 121,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5123,
+            "count" : 600,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5126,
+            "count" : 1,
+            "type" : "MAT4"
+        },
+        {
+            "bufferView" : 8,
+            "componentType" : 5126,
+            "count" : 60,
+            "max" : [
+                1.2068862915039062,
+                11.214142799377441,
+                1.2038774490356445
+            ],
+            "min" : [
+                -0.06146937608718872,
+                9.9312744140625,
+                -0.0584602952003479
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 9,
+            "componentType" : 5126,
+            "count" : 60,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 10,
+            "componentType" : 5126,
+            "count" : 60,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 11,
+            "componentType" : 5126,
+            "count" : 60,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 12,
+            "componentType" : 5121,
+            "count" : 60,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 13,
+            "componentType" : 5126,
+            "count" : 60,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 14,
+            "componentType" : 5123,
+            "count" : 270,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 15,
+            "componentType" : 5126,
+            "count" : 4,
+            "type" : "MAT4"
+        },
+        {
+            "bufferView" : 16,
+            "componentType" : 5126,
+            "count" : 12,
+            "max" : [
+                10.149070739746094,
+                10.166670799255371,
+                0.14177334308624268
+            ],
+            "min" : [
+                9.850929260253906,
+                9.833337783813477,
+                -0.14177334308624268
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 17,
+            "componentType" : 5126,
+            "count" : 12,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 18,
+            "componentType" : 5126,
+            "count" : 12,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 19,
+            "componentType" : 5126,
+            "count" : 12,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 20,
+            "componentType" : 5121,
+            "count" : 12,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 21,
+            "componentType" : 5126,
+            "count" : 12,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 22,
+            "componentType" : 5123,
+            "count" : 60,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 23,
+            "componentType" : 5126,
+            "count" : 1,
+            "type" : "MAT4"
+        },
+        {
+            "bufferView" : 24,
+            "componentType" : 5126,
+            "count" : 20,
+            "max" : [
+                20.499998092651367,
+                10.500003814697266,
+                0.5
+            ],
+            "min" : [
+                19.499998092651367,
+                9.500003814697266,
+                -0.5
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 25,
+            "componentType" : 5126,
+            "count" : 20,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 26,
+            "componentType" : 5126,
+            "count" : 20,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 27,
+            "componentType" : 5126,
+            "count" : 20,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 28,
+            "componentType" : 5121,
+            "count" : 20,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 29,
+            "componentType" : 5126,
+            "count" : 20,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 30,
+            "componentType" : 5123,
+            "count" : 30,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 31,
+            "componentType" : 5126,
+            "count" : 1,
+            "type" : "MAT4"
+        },
+        {
+            "bufferView" : 32,
+            "componentType" : 5126,
+            "count" : 20,
+            "max" : [
+                30.5,
+                11,
+                0.5
+            ],
+            "min" : [
+                29.5,
+                10,
+                -0.5
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 33,
+            "componentType" : 5126,
+            "count" : 20,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 34,
+            "componentType" : 5126,
+            "count" : 20,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 35,
+            "componentType" : 5126,
+            "count" : 20,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 36,
+            "componentType" : 5121,
+            "count" : 20,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 37,
+            "componentType" : 5126,
+            "count" : 20,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 38,
+            "componentType" : 5126,
+            "count" : 1,
+            "type" : "MAT4"
+        },
+        {
+            "bufferView" : 39,
+            "componentType" : 5126,
+            "count" : 169,
+            "max" : [
+                64.62890625,
+                1.4255294799804688,
+                64.171875
+            ],
+            "min" : [
+                -64.171875,
+                0,
+                -64.62890625
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 40,
+            "componentType" : 5126,
+            "count" : 169,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 41,
+            "componentType" : 5126,
+            "count" : 169,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 42,
+            "componentType" : 5126,
+            "count" : 169,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 43,
+            "componentType" : 5121,
+            "count" : 169,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 44,
+            "componentType" : 5126,
+            "count" : 169,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 45,
+            "componentType" : 5123,
+            "count" : 864,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 46,
+            "componentType" : 5126,
+            "count" : 50,
+            "max" : [
+                44.40907669067383,
+                14.409079551696777,
+                12.028524398803711
+            ],
+            "min" : [
+                35.59092330932617,
+                5.590921878814697,
+                -5.493998050689697
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 47,
+            "componentType" : 5126,
+            "count" : 50,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 48,
+            "componentType" : 5126,
+            "count" : 50,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 49,
+            "componentType" : 5126,
+            "count" : 50,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 50,
+            "componentType" : 5121,
+            "count" : 50,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 51,
+            "componentType" : 5126,
+            "count" : 50,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 52,
+            "componentType" : 5123,
+            "count" : 240,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 53,
+            "componentType" : 5126,
+            "count" : 1,
+            "type" : "MAT4"
+        },
+        {
+            "bufferView" : 54,
+            "componentType" : 5126,
+            "count" : 20,
+            "max" : [
+                50.5,
+                11,
+                0.5
+            ],
+            "min" : [
+                49.5,
+                10,
+                -0.5
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 55,
+            "componentType" : 5126,
+            "count" : 20,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 56,
+            "componentType" : 5126,
+            "count" : 20,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 57,
+            "componentType" : 5126,
+            "count" : 20,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 58,
+            "componentType" : 5121,
+            "count" : 20,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 59,
+            "componentType" : 5126,
+            "count" : 20,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 60,
+            "componentType" : 5123,
+            "count" : 30,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 61,
+            "componentType" : 5126,
+            "count" : 1,
+            "type" : "MAT4"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 1452,
+            "byteOffset" : 0,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 968,
+            "byteOffset" : 1452,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 968,
+            "byteOffset" : 2420,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1452,
+            "byteOffset" : 3388,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 484,
+            "byteOffset" : 4840,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1936,
+            "byteOffset" : 5324,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1200,
+            "byteOffset" : 7260,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 64,
+            "byteOffset" : 8460
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 720,
+            "byteOffset" : 8524,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 480,
+            "byteOffset" : 9244,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 480,
+            "byteOffset" : 9724,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 720,
+            "byteOffset" : 10204,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 240,
+            "byteOffset" : 10924,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 960,
+            "byteOffset" : 11164,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 540,
+            "byteOffset" : 12124,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 256,
+            "byteOffset" : 12664
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 144,
+            "byteOffset" : 12920,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 96,
+            "byteOffset" : 13064,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 96,
+            "byteOffset" : 13160,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 144,
+            "byteOffset" : 13256,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 48,
+            "byteOffset" : 13400,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 192,
+            "byteOffset" : 13448,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 120,
+            "byteOffset" : 13640,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 64,
+            "byteOffset" : 13760
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 240,
+            "byteOffset" : 13824,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 160,
+            "byteOffset" : 14064,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 160,
+            "byteOffset" : 14224,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 240,
+            "byteOffset" : 14384,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 80,
+            "byteOffset" : 14624,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 320,
+            "byteOffset" : 14704,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 60,
+            "byteOffset" : 15024,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 64,
+            "byteOffset" : 15084
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 240,
+            "byteOffset" : 15148,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 160,
+            "byteOffset" : 15388,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 160,
+            "byteOffset" : 15548,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 240,
+            "byteOffset" : 15708,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 80,
+            "byteOffset" : 15948,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 320,
+            "byteOffset" : 16028,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 64,
+            "byteOffset" : 16348
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2028,
+            "byteOffset" : 16412,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1352,
+            "byteOffset" : 18440,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1352,
+            "byteOffset" : 19792,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2028,
+            "byteOffset" : 21144,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 676,
+            "byteOffset" : 23172,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2704,
+            "byteOffset" : 23848,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1728,
+            "byteOffset" : 26552,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 600,
+            "byteOffset" : 28280,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 400,
+            "byteOffset" : 28880,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 400,
+            "byteOffset" : 29280,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 600,
+            "byteOffset" : 29680,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 200,
+            "byteOffset" : 30280,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 800,
+            "byteOffset" : 30480,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 480,
+            "byteOffset" : 31280,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 64,
+            "byteOffset" : 31760
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 240,
+            "byteOffset" : 31824,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 160,
+            "byteOffset" : 32064,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 160,
+            "byteOffset" : 32224,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 240,
+            "byteOffset" : 32384,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 80,
+            "byteOffset" : 32624,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 320,
+            "byteOffset" : 32704,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 60,
+            "byteOffset" : 33024,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 64,
+            "byteOffset" : 33084
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 33148,
+            "uri" : "TanahSyam-3d0.bin"
+        }
+    ]
+}

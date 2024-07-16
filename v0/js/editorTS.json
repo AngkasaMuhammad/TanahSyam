@@ -1,0 +1,529 @@
+[
+	[
+		{
+			"text": "\"use strict\"\n\n//editor TanahSyam\nlet eTS = {}\n\n;{\n\tlet lih = ru.lihat\n\tlet v2 = wgpuMatrix.vec2\n\tlet v3 = wgpuMatrix.vec3\n\tlet m3 = wgpuMatrix.mat3\n\tlet m4 = wgpuMatrix.mat4\n\tlet attr = ru.attr\n\tlet que = ru.que\n\t\n\tlet datang = e=>moutex.textContent = attr(e.target,'mousedescr',)\n\tlet pergi = e=>moutex.textContent = ''\n\tlet moutex = que('#moutex')[0]\n\tlet w = pl.canv.width\n\tlet h = pl.canv.height\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "0",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "let open = que('#open')[0]\nlet save = que('#save')[0]\nlet saveas = que('#saveas')[0]\nlet fhsave//file handle\n",
+			"visible": true,
+			"time": "1335255.8755192158",
+			"speed": "12.414414414414408",
+			"running": true,
+			"color": [
+				{
+					"r": "0",
+					"g": "188",
+					"b": "0",
+					"frame": "0"
+				},
+				{
+					"r": "188",
+					"g": "155",
+					"b": "188",
+					"frame": "1"
+				},
+				{
+					"r": "255",
+					"g": "0",
+					"b": "255",
+					"frame": "2"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "let femptyproject = ()=>{\n\tlih('kosongkan')\n\nfor(let draw of pl.drawarr){\n\tru.habisarr(draw.objarr)\n}\n\n}\n",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "155",
+					"g": "188",
+					"b": "222",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "let execjson = json=>{\n\tlih(json)\n\nfor(let prop in json){\n\tlet drawsrc = json[prop]\n\nfor(let objsrc of drawsrc){\n\tlet nodedstarr = [ui.newobj(prop)]\n\nfor(let i = 0;i < nodedstarr.length;i++){\n\tlet nodedst = nodedstarr[i]\n\tlet m = nodedst.matlok\n\tlet nodesrc = objsrc[nodedst.name]\n\tm4.copy(nodesrc.matlok,m,)\n\tif(nodedst.mat2d){\n\nfor(let j = 0;j < nodedst.mat2d.length;j++){\n\tlet mat2ddst = nodedst.mat2d[j] \n\tm3.copy(nodesrc.mat2d[j],mat2ddst,)\n}\n\n\t}\n\tnodedstarr.push(...nodedst.chi)\n}\n\t\n}\n\n}\n\n}\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "188",
+					"b": "55",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "let fsaveas = async ()=>{\n\tfhsave = await showSaveFilePicker()\n\tattr(save,'mousedescr','Save '+fhsave.name,)\n\tfsave()\n}\n",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "155",
+					"b": "188",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "let fsave = async ()=>{\n\tlet json = savejson()\n\t\n\tif(!fhsave){return}\n\tlet wri = await fhsave.createWritable()\n\tawait wri.write(lih(JSON.stringify(json,null,'\\t',)))\n\tawait wri.close()\n}\n",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "188",
+					"g": "188",
+					"b": "122",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "let savejson = ()=>{\n\tlet json = {}\n\nfor(let draw of pl.drawarr){\n\tlet objarr = json[draw.name] = []\n\nfor(let obj of draw.objarr){\n\tlet nodearr = [obj.node]\n\tlet nodeprop = {}\n\nfor(let i = 0;i < nodearr.length;i++){\n\tlet node = nodearr[i]\n\tlet nodeout = nodeprop[node.name] = {matlok:[...node.matlok],}\n\tif(node.mat2d){\n\t\tlet mat2d = []\n\nfor(let mat2dini of node.mat2d){\n\tmat2d.push([...mat2dini])\n}\n\n\t\tnodeout.mat2d = mat2d\n\t}\n\tnodearr.push(...node.chi)\n}\n\n\tobjarr.push(nodeprop)\n}\n\n\tjson[draw.name] = objarr\n}\n\n\treturn json\n}\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "0",
+					"g": "188",
+					"b": "155",
+					"frame": "0"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "eTS.newgedung = ()=>{//length width height jendela\n\t\n\tlet g = ui.newobj('rangkagedung1')\n\tlet m = g.matlok\n\tm4.rotationY(.75,m,)\n\tm[12] = 39000\n\tm[14] = -m[12]\n\tlet a = ru.acak\n\teTS.resizegedung(g,2+a(6),2+a(22),2+a(5),)\n\teTS.warnagedung(g,0,)\n\tobjdipilih = g.obj\n\t\n\treturn g\n}\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "eTS.objdipilih = ()=>objdipilih\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "155",
+					"g": "155",
+					"b": "155",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "eTS.resizegedung = (g,l,h,w,)=>{\n\tlet m = g.matlok\n\tlet scainv = m4.getScaling(m)\n\tscainv = m4.scaling(scainv)\n\tm4.invert(scainv,scainv,)\n\tm4.mul(m,scainv,m,)\n\tm4.scale(m,[l*10,h*10,w*10,],m,)\n\t\n\t//pilih warna\n\tlet mdep = g.mat2d[1]\n\tlet msam = g.mat2d[0]\n\t\n\tlet pw = mdep[8]/200\n\tm3.translation([pw*200,0,],mdep,)\n\tm3.translation([pw*200,0,],msam,)\n\tm3.scale(mdep,[l*10,h*10,],mdep,)\n\tm3.scale(msam,[w*10,h*10,],msam,)\n\t\n}\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "0",
+					"g": "255",
+					"b": "155",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "eTS.warnagedung = (g,wa,)=>{\n\tlet mdep = g.mat2d[1]\n\tlet msam = g.mat2d[0]\n\t\n\tmdep[8] = \n\tmsam[8] = wa*200\n}\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "155",
+					"g": "155",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "addEventListener('mousemove',e=>{\n\nif(ru.key.s){\n\tlet x = cacupos.x\n\tlet y = cacupos.y\n\t\n\tx += e.movementX\n\ty += e.movementY\n\tx = Math.min(x,w,); x = Math.max(x,0,)\n\ty = Math.min(y,h,); y = Math.max(y,0,)\n\t\n\tcacupos.x = x\n\tcacupos.y = y\n}\nif(ru.key.v && objdipilih){\n\t//RUMUS: mbaru = cgbaru / cg * mawal\n\n\tlet cg = ui.camges\n\tlet cginv = m4.invert(cg)\n\tlet m = objdipilih.node.matlok\n\t\n\tlet mini = m4.translate(cg,[\n\t\te.movementX/444,\n\t\t0,\n\t\te.movementY/444,\n\t],)\n\tm4.mul(mini,cginv,mini,)\n\tm4.mul(mini,m,m,)\n}\nif(ru.key.o && objdipilih){\n\t//sampe sini, rotate relative di posisi objek\n\tlet m = objdipilih.node.matlok\n\tlet vecpos = m4.getTranslation(m)\n\tlet pos = m4.translation(vecpos)\n\tv3.negate(vecpos,vecpos,)\n\tlet posinv = m4.translation(vecpos)\n\tlet r = m4.rotationY(-e.movementX/444)\n\tm4.mul(posinv,m,m,)\n\tm4.mul(r,m,m,)\n\tm4.mul(pos,m,m,)\n}\n\n},)\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "222",
+					"g": "188",
+					"b": "188",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "addEventListener('wheel',e=>{\n\nif(ru.key.v && objdipilih){\n\t//RUMUS: mbaru = cgbaru / cg * mawal\n\n\tlet cg = ui.camges\n\tlet cginv = m4.invert(cg)\n\tlet m = objdipilih.node.matlok\n\t\n\tlet mini = m4.translate(cg,[\n\t\t0,\n\t\te.deltaY/5555,\n\t\t0,\n\t],)\n\tm4.mul(mini,cginv,mini,)\n\tm4.mul(mini,m,m,)\n}\n\t\n})\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "188",
+					"g": "188",
+					"b": "0",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "addEventListener('mousedown',e=>{\n\tif(!ru.key.s){return}\n\tobjdipilih = objdekat\n},)\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "155",
+					"b": "155",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "\n\tfor(let ele of que('[mousedescr]')){\n\t\tele.addEventListener('mouseenter',datang,)\n\t\tele.addEventListener('mouseleave',pergi,)\n\t}\n\taddEventListener('mousemove',e=>{\n\t\tlet x = Math.min(e.clientX+11,innerWidth-moutex.clientWidth,)\n\t\tlet y = Math.min(e.clientY+11,innerHeight-moutex.clientHeight,)\n\t\tmoutex.style.left = x+'px'\n\t\tmoutex.style.top = y+'px'\n\t})\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "0",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "open.addEventListener('click',async ()=>{\n\tlet pickfile = await showOpenFilePicker()\n\tfemptyproject()\n\t;[fhsave] = pickfile\n\tattr(save,'mousedescr','Save '+fhsave.name,)\n\tlet json = await fhsave.getFile()\n\tjson = await json.text()\n\tjson = JSON.parse(json)\n\texecjson(json)\n})\n",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "222",
+					"g": "188",
+					"b": "222",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "saveas.addEventListener('click',fsaveas,)\nsave.addEventListener('click',()=>fhsave?fsave():fsaveas(),)\n",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "188",
+					"g": "255",
+					"b": "122",
+					"frame": "0"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "let posmat = m=>{\n\tm = m4.copy(m)\n\tm4.mul(ui.matview,m,m,)\n\treturn (0 < m[15])?{\n\t\tx:m[12]/m[15],\n\t\ty:-m[13]/m[15],\n\t}:null\n}\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "0",
+					"b": "155",
+					"frame": "0"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "\npl.javascript_ui.push(async ()=>{\n\tlet worldcoba = await fetch(ru.que('link#worldcoba')[0].href)\n\tworldcoba = await worldcoba.json()\n\texecjson(lih(worldcoba))\n})\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "155",
+					"g": "155",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "\nlet cacupos = {x:w/2,y:h/2,} //canv2d cursor pos\nlet cx2d = pl.cx2d\nlet objdekat = null\nlet jarakdekat = Infinity\nlet objdipilih = null\n\npl.render.push(dt=>{\n\tcx2d.clearRect(-11,-11,w+11,h+11,)\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "188",
+					"g": "155",
+					"b": "188",
+					"frame": "0"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "\n//titik obj\nobjdekat = null\njarakdekat = Infinity\n\nif(ru.key.s){\n\tlet xgaris\n\tlet ygaris\n\nfor(let draw of pl.drawarr){\n\nfor(let obj of draw.objarr){\n\tlet posobj = posmat(obj.node.matlok)\n\nif(posobj){\n\tlet {x,y,} = posobj\n\tlet x2d = (x+1)*w/2\n\tlet y2d = (y+1)*h/2\n\tcx2d.fillStyle = ru.rgba(...Array(3).fill(Math.random()*255),1,)\n\tcx2d.fillRect(x2d-3,y2d-3,6,6,)\n\tlet j = v2.dist(\n\t\t[cacupos.x,cacupos.y,],\n\t\t[x2d,y2d,],\n\t)\n\nif(j < jarakdekat){\n\tobjdekat = obj\n\tjarakdekat = j\n\txgaris = x2d\n\tygaris = y2d\n}\n\n}\n\n}\n\n}\n\nif(objdekat){\n\tcx2d.strokeStyle = 'white'\n\tcx2d.beginPath()\n\tcx2d.moveTo(cacupos.x,cacupos.y,)\n\tcx2d.lineTo(xgaris,ygaris,)\n\tcx2d.stroke()\n}\n\n}\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "188",
+					"g": "188",
+					"b": "155",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "\n//cursor\nif(ru.key.s){cx2d.save()\n\tcx2d.translate(cacupos.x,cacupos.y,)\n\tcx2d.lineWidth = 2\n\t\n\tcx2d.strokeStyle = 'black'\n\tcx2d.strokeRect(-11,-11,22,22,)\n\tcx2d.beginPath()\n\tcx2d.moveTo(-3,-3,)\n\tcx2d.lineTo(3,3,)\n\tcx2d.moveTo(-3,3,)\n\tcx2d.lineTo(3,-3,)\n\tcx2d.stroke()\n\t\n\tcx2d.strokeStyle = 'white'\n\tcx2d.beginPath()\n\tcx2d.moveTo(4,0,)\n\tcx2d.lineTo(-4,0,)\n\tcx2d.moveTo(0,-4,)\n\tcx2d.lineTo(0,4,)\n\tcx2d.stroke()\ncx2d.restore()}\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "0",
+					"g": "255",
+					"b": "0",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "\nif(objdipilih){\n\tlet pos = posmat(objdipilih.node.matlok)\n\nif(pos){\n\tcx2d.fillStyle = ru.key.s?'white':ru.rgba(0,\n\t\tMath.random()*255,\n\t\tMath.random()*255,\n\t1,)\n\tlet {x,y,} = pos\n\tcx2d.fillRect(\n\t\t(x+1)*w/2-5,\n\t\t(y+1)*h/2-5,\n\t10,10,)\n}\n\n}\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "\n})\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "188",
+					"g": "0",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "}\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "0",
+					"frame": "0"
+				}
+			]
+		}
+	]
+]

@@ -1,0 +1,490 @@
+[
+	[
+		{
+			"text": "",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "\"use strict\"\n\nlet obj = {}\npl.javascript_ui.push(async ()=>{\n\tlet lih = ru.lihat\n\t\n\tlet abs = Math.abs\n\tlet sin = Math.sin\n\tlet atan = Math.atan\n\tlet pi = Math.PI\n\t\n\tlet v3 = wgpuMatrix.vec3\n\tlet m3 = wgpuMatrix.mat3\n\tlet m4 = wgpuMatrix.mat4\n\tlet matide = m4.identity()\n\t\n\tlih('ini objek js')\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "0",
+					"g": "155",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "let roketarr = []\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "0",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "\nlet packwarna = arrrgba=>\nnew Uint32Array(\n\tnew Uint8ClampedArray(\n\t\tarrrgba\n\t\t.map(fmappackwarna)\n\t\t.reverse()\n\t).buffer\n)[0]\n\nlet fmappackwarna = aa=>aa*0xff\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "188",
+					"g": "255",
+					"b": "188",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "\nru.que('.timespeed')[0].addEventListener('input',e=>{\n\tpl.timespeed = +e.currentTarget.value\n},)\n\nru.que('#SHadvmenu')[0].addEventListener('click',e=>{\n\te.currentTarget.textContent = \n\t\tru\n\t\t.que('#ui')[0]\n\t\t.classList\n\t\t.toggle('showadvmenu')\n\t?'Show Advanced'\n\t:'Hide Advanced'\n},)\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "155",
+					"b": "0",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "\nlet farma = sudut=>{//arah matahari\n\tlet m = m4.rotationZ(sudut)\n\tlet v = v3.transformMat4([0,1,0,],m,)\n\tpl.updarahmatahari(v)\n\t\n\tlet wei = sin(sudut+pi/2)\n\tlet sunsky = atan(4*wei)*1.26/pi+.5\n\tlet r = sunsky-.8\n\tlet g = sunsky-.3\n\tlet b = sunsky\n\tlet a = 1.//.5\n\tpl.setlangit([r,g,b,a,])\n\t\n\tr = sunsky\n\tg = sunsky*sunsky\n\tb = atan(3*wei)\n\ta = -sunsky*.6+.75\n\tpl.updsinar(packwarna([r,g,b,a,]))\n\t\n\tr =\n\tg = -.08*wei-.01\n\tb = .08*wei+.1\n\ta = -abs(wei*.4)+.8-wei*.3\n\tpl.updbayangan(packwarna([r,g,b,a,]))\n}\nlet arahmatahari = ru.que('.arahmatahari')[0]\narahmatahari.addEventListener('input',e=>farma(+e.currentTarget.value),)\naddEventListener('mouseup',e=>arahmatahari.blur(),)\nfarma(0)\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "188",
+					"g": "122",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "let objtype = ru.que('.objtype')[0]\nfor(let {name} of pl.drawarr){\n\tlet op = document.createElement('option')\n\tobjtype.appendChild(op)\n\top.value = op.textContent = name\n}\nru.que('.newobj')[0].addEventListener('click',()=>{\n\tui.newobj(objtype.value)\n})\n\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "let bikinroket =\nobj.bikinroket = ()=>{\n\tlet node = ui.newobj('rangkaroket')\n\tlet s = 1.4\n\tlet a0 = Math.random()*.3-.15\n\tlet a1 = Math.random()*.3-.15\n\tlet a2 = Math.random()*.3-.15\n\tlet pos = v3.set(\n\t\tMath.random()*1111-555,\n\t\t44,\n\t\tMath.random()*1111-555,\n\t)\n\tlet suararoket = suara.roket?.()\n\tlet suaraboom = suara.boom\n\t;(suararoket??{}).value = .1\n\tlet o = {\n\t\trangka:node,\n\t\tpos,\n\t\tspeed:v3.set(s+a0,s+a1,-s+a2,),\n\t\tsuaraboom,\n\t}\n\troketarr.push(o)\n\t\n\treturn o\n}\nlet lrr = 0 //luncurkan roket reload\nlet lrre = 0 //luncurkan roket recoil\nlet lrc = 0 //luncurkan roket count\n\n//setTimeout(obj.bikinroket,1111,)\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "let render0 = dt=>{\n\t//arah matahari\n\t\n\tlet arma = arahmatahari\n\tlet v = +arma.value\n\tfarma(v += dt*.00001)\n\tarma.value = v\n\tif(+arma.max < v){\n\t\tarma.value = +arma.min\n\t}\n\t\n\t//lampu gedung\n\tlet g1arr = pl.drawarr[7].objarr\n\tif(!g1arr.length){return}\n\tlet i = Math.floor(Math.random()*g1arr.length)\n\tlet g1 = g1arr[i].node\n\teTS.warnagedung(g1,(Math.cos(arma.value) > .0)+2,)\n}\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "188",
+					"b": "155",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "let render1 = dt=>{\n\t//roket\n\t\n\tfor(let r of roketarr){\nlet rangka = r.rangka\nlet pos = r.pos\n\nif(pos[1] < -111){\n\tui.deleteobj(rangka)\n\tr.dihapus = true\n\t;(r.suaraboom?.()??{}).value = Math.random()*.04+.05\n\tcontinue\n}\n\nlet m = rangka.matlok\nlet speed = r.speed\nlet posawal = [...pos]\n\nspeed[1] -= .0001*dt\nv3.addScaled(pos,speed,dt,pos)\nm4.cameraAim(posawal,pos,[0,1,0,],m,)\nm4.scale(m,[5,5,5,],m,)\n\n\t}\n\tfor(let i = 0;i < roketarr.length;i++){\n\t\tlet r = roketarr[i]\n\t\tif(r.dihapus){\n\t\t\troketarr.splice(i--,1,)\n\t\t}\n\t}\n}\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "188",
+					"g": "255",
+					"b": "222",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "let render2 = dt=>{\n\t//luncurkan roket\n\t\n\tlrr -= dt\n\tif(lrr <= 0){\n\t\tlrc = ru.acak(11)+5\n\t\tlrr = ru.acak(22222)+4444\n\t}\n\tif(lrc > 0 && lrre <= 0){\n\t\tbikinroket()\n\t\tlrre = ru.acak(77)+44\n\t\tlrc--\n\t}else{\n\t\tlrre -= dt\n\t}\n\t\n}\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "188",
+					"g": "188",
+					"b": "188",
+					"frame": "0"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "pl.render.push(dt=>{\n\trender0(dt) //arah matahari\n\trender1(dt) //roket\n\trender2(dt) //luncurkan roket\n})\nsetTimeout(()=>lih('!!!!!\\n\\n\\n\\n\\nsampe sini, lampu geddung siang malam\\n\\n\\n\\n!!!!!'),1111,)\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "122",
+					"g": "188",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "\nreturn 0 //=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n\n/*\n\n\n\n\n\n\n\n\n\n\n*/\n",
+			"visible": true,
+			"time": "107644.68019998661",
+			"speed": "1",
+			"running": true,
+			"color": [
+				{
+					"r": "255",
+					"g": "0",
+					"b": "0",
+					"frame": "0"
+				},
+				{
+					"r": "255",
+					"g": "0",
+					"b": "255",
+					"frame": ".1"
+				},
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": ".21"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "\tui.newobj('rangkaxyz')\n\tlet tanah = ui.newobj('rangkatanah')\n\tm4.scaling([99,99,99,],tanah.matlok,)\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "155",
+					"b": "188",
+					"frame": "0"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "let bikingedung = (\n\tsetm,\n\tl,h,w,\n\tmdep,msam,\n)=>{//length width height jendela\n\tlet g = ui.newobj('rangkagedung0')\n\tlet m = g.matlok\n\tm4.copy(setm,m,)\n\tm4.scale(m,[l*10,h*10,w*10,],m,)\n\tm3.copy(mdep,g.mat2d[1],)\n\tm3.copy(msam,g.mat2d[0],)\n//sampe sini, bikin bola, mau lihat arah sinar\n}\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "188",
+					"b": "0",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "let bikinkomplek = (\n\tx,z,rot,\n\tl,\n\tlg,wg,maxhg,\n)=>{//g -->> gedung\nfor(let a = 0;a < l;a++){\n\tlet hg = 1+ru.acak(maxhg)\n\tlet m = m4.translation([x,0,z,])\n\tm4.rotateY(m,rot,m,)\n\tm4.translate(m,[a*10*(lg+1),0,0,],m,)\n\t\n\t//pilih warna\n\tlet pw = (ru.acak(11) < 10)\n\t?ru.acak(1)\n\t:(2+ru.acak(1))\n\tlet mdep = m3.translation([pw*200,0,])\n\tm3.scale(mdep,[lg*10,hg*10,],mdep,)\n\tlet msam = m3.translation([pw*200,0,])\n\tm3.scale(msam,[wg*10,hg*10,],msam,)\n\tbikingedung(\n\t\tm,\n\t\tlg,hg,wg,\n\t\tmdep,msam,\n\t)\n}\n}\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "\nbikinkomplek(10,0,0, 6, 5,9,22)\nbikinkomplek(20,80,1, 9, 3,5,6)\n\nbikinkomplek(20,160,2, 33, 3,5,2)\nbikinkomplek(20,240,3, 33, 3,5,3)\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "155",
+					"g": "255",
+					"b": "155",
+					"frame": "0"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "ui.render = dt=>{\n\t\n\tlet m2d0\n\tlet m3d0\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "}\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "\n})\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "0",
+					"frame": "0"
+				}
+			]
+		}
+	]
+]

@@ -1,0 +1,24 @@
+input,select,option,button{
+	background:#000000bb;
+	color:white;
+}
+.arahmatahari,
+.timespeed{
+	width:444px;
+}
+.settimeout{
+	width:77px;
+}
+.hlmhelp{
+	background:#00000088;
+}
+.getar{
+	width: 18px;
+	height: 18px;
+	margin: 0px;
+	vertical-align: middle;
+}
+
+.showadvmenu .advmenu{
+	display:none;
+}

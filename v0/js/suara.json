@@ -1,0 +1,169 @@
+[
+	[
+		{
+			"text": "\"use strict\"\n\nlet suara = {}\n\npl.javascript_ui.push(async aa=>{\n\tlet lih = ru.lihat\n\tlet que = ru.que\n\tlih('file suara js')\n",
+			"visible": true,
+			"time": "340439.1456406929",
+			"speed": "18.171171171171164",
+			"running": true,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				},
+				{
+					"r": "254",
+					"g": "255",
+					"b": "255",
+					"frame": "1"
+				},
+				{
+					"r": "0",
+					"g": "255",
+					"b": "255",
+					"frame": "1.02"
+				},
+				{
+					"r": "0",
+					"g": "255",
+					"b": "255",
+					"frame": "2"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "let acx = new AudioContext()\nlet audroket = null\nlet audboom = null\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "0",
+					"frame": "0"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": ";{\n\tlet src\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "122",
+					"g": "155",
+					"b": "188",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "src = que('#suararoket')[0].href\naudroket = await fetch(src)\naudroket = await audroket.arrayBuffer()\naudroket = await acx.decodeAudioData(audroket)\n\nsuara.roket = ()=>{\n\tlet ga = acx.createGain()\n\tlet audbufroket = acx.createBufferSource()\n\taudbufroket.buffer = audroket;\n\taudbufroket.connect(ga).connect(acx.destination);\n\taudbufroket.start(0)\n\t\n\treturn ga.gain\n}\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "155",
+					"g": "255",
+					"b": "0",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "src = que('#suaraboom')[0].href\naudboom = await fetch(src)\naudboom = await audboom.arrayBuffer()\naudboom = await acx.decodeAudioData(audboom)\n\nsuara.boom = ()=>{\n\tlet ga = acx.createGain()\n\tlet audbufboom = acx.createBufferSource()\n\taudbufboom.buffer = audboom;\n\taudbufboom.connect(ga).connect(acx.destination);\n\taudbufboom.start(0)\n\t\n\treturn ga.gain\n}\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "155",
+					"g": "155",
+					"b": "155",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "}\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "0",
+					"g": "155",
+					"b": "188",
+					"frame": "0"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "\n})\n",
+			"visible": true,
+			"time": "118544.92199283806",
+			"speed": "6.333333333333333",
+			"running": true,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				},
+				{
+					"r": "255",
+					"g": "0",
+					"b": "255",
+					"frame": "1"
+				}
+			]
+		}
+	]
+]

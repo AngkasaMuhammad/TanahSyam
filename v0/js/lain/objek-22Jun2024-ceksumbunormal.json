@@ -1,0 +1,256 @@
+[
+	[
+		{
+			"text": "",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "\"use strict\"\n\nui.mulai = async ()=>{\n\tlet lih = ru.lihat\n\tlet v3 = wgpuMatrix.vec3\n\tlet m3 = wgpuMatrix.mat3\n\tlet m4 = wgpuMatrix.mat4\n\tlet matide = m4.identity()\n\t\n\tlih('ini objek js')\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "0",
+					"g": "155",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "\tlet grid = ui.newobj('rangkagrid')\n\tlet sumbu0 = ui.newobj('rangkaxyz')\n\tlet sumbu1 = ui.newobj('rangkaxyz')\n\tlet titik = ui.newobj('rangkatitik')\n\tlet kotak = ui.newobj('rangkakotak')\n\tlet gedung0 = ui.newobj('rangkagedung0')\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "155",
+					"b": "188",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "\tlet s0m = sumbu0.matlok\n\tm4.translate(s0m,[10,0,0,],s0m,)\n\tlet s1m = sumbu1.matlok\n\tm4.identity(s1m)\n\tlet tm = titik.matlok\n\tlet km = kotak.matlok\n\tm4.identity(km)\n\t//m4.scale(km,[.5,.5,.5,],km,)\n\t//km[3] = 1.5\n\t//km[0] = .3\n\t\n\tlet mge0 = gedung0.matlok\n\tm4.translation([0,0,0,],mge0,)\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "155",
+					"g": "155",
+					"b": "155",
+					"frame": "0"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "ui.render = dt=>{\n\t\n\tlet m2d0\n\tlet m3d0\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "\tlet bx = sumbu0.chi[1].chi[0].matlok\n\tlet by = sumbu0.chi[1].chi[1].matlok\n\tlet bz = sumbu0.chi[1].chi[2].matlok\n\tlet cepat = .07\n\tlet putar = Math.PI/2\n\t\n\tru.key.naik && m4.translate(bz,[0,0,-cepat,],bz)\n\tru.key.turun && m4.translate(bz,[0,0,cepat,],bz)\n\tru.key.kiri && m4.translate(bz,[-cepat,0,0,],bz)\n\tru.key.kanan && m4.translate(bz,[cepat,0,0,],bz)\n\tru.key.zoomin && m4.translate(bz,[0,cepat,0,],bz)\n\tru.key.zoomout && m4.translate(bz,[0,-cepat,0,],bz)\n\t\n//normalize axis\n\tlet X = 12\n\tlet Y = 13\n\tlet Z = 14\n\t\n\tlet pos = m4.getTranslation(bz)\n\tv3.normalize(pos,pos,)\n\tv3.mulScalar(pos,5,pos,)\n\tm4.translate(matide,pos,bz,)\n\t\n//putar sumbu\n\tpos[1] = 0\n\tv3.normalize(pos,pos,)\n\tv3.mulScalar(pos,5,pos,)\n\tbx[X] = pos[2]\n\tbx[Z] = -pos[0]\n\n\tpos = m4.getTranslation(bz)\n\tlet ysrc = pos[1]\n\tpos[1] = 0\n\tby[Y] = v3.length(pos)\n\tv3.normalize(pos,pos,)\n\tv3.mulScalar(pos,-ysrc,pos,)\n\tby[X] = pos[0]\n\tby[Z] = pos[2]\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "0",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "\tm4.set(\nbx[X],bx[Y],bx[Z],0,\nby[X],by[Y],by[Z],0,\nbz[X],bz[Y],bz[Z],0,\n0,0,0,1,\n\ts1m,)\n\tm4.scale(s1m,Array(3).fill(1/5),s1m,)\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "155",
+					"b": "0",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "\tpos = m4.getTranslation(bz)\n\tv3.normalize(pos,pos,)\n\tm4.translate(matide,arahnormal(pos,km,[0,1,0,],),tm,)\n\t\n\t//coba =--=-==-=-=-=---=-=--\n\t//let mputar = m4.rotationY(.0004*dt)\n\t//m4.mul(mputar,km,km,)\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "155",
+					"g": "155",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "}\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "\t//bikin matrix dari vec normal\nlet arahnormal = (norawal,mobj,vertpos,)=>{\n\tlet v3 = wgpuMatrix.vec3\n\tlet v4 = wgpuMatrix.vec4\n\tlet m4 = wgpuMatrix.mat4\n\tlet matide = m4.identity()\n\t\n//-=-=-=-=-=-=-\n//INGAT!! normal lurus vertikal tidak bisa cross, sx & sy dibikin sendiri\n\tlet vp = vertpos\n\tlet sz = [...norawal]\n\t\n\tlet sx0 = [sz[2],0,-sz[0],]; sx0 = v3.normalize(sx0)\n\tlet sx1 = [-sz[2],0,sz[0],]; sx1 = v3.normalize(sx1)\n\t\n\tlet sy0 = v3.cross(sz,sx0,)\n\tlet sy1 = v3.cross(sz,sx1,)\n\t\n\tsx0 = v3.add(vp,sx0,)\n\tsx1 = v3.add(vp,sx1,)\n\tsy0 = v3.add(vp,sy0,)\n\tsy1 = v3.add(vp,sy1,)\n\n\tsx0 = [...sx0,1,]\n\tsx1 = [...sx1,1,]\n\tsy0 = [...sy0,1,]\n\tsy1 = [...sy1,1,]\n\n\tlet tukar = false\n\tlet sx = v4.transformMat4(sx0,mobj,)\n\tif(sx[3] <= 0){\n\t\tsx = v3.transformMat4(sx1,mobj,)\n\t\ttukar = !tukar\n\t}else{\n\t\tsx = [\n\t\t\tsx[0]/sx[3],\n\t\t\tsx[1]/sx[3],\n\t\t\tsx[2]/sx[3],\n\t\t]\n\t}\n\tlet sy = v4.transformMat4(sy0,mobj,)\n\tif(sy[3] <= 0){\n\t\tsy = v3.transformMat4(sy1,mobj,)\n\t\ttukar = !tukar\n\t}else{\n\t\tsy = [\n\t\t\tsy[0]/sy[3],\n\t\t\tsy[1]/sy[3],\n\t\t\tsy[2]/sy[3],\n\t\t]\n\t}\n\tvp = v3.transformMat4(vp,mobj,)\n\t\n\tsx = v3.sub(sx,vp,)\n\tsy = v3.sub(sy,vp,)\n\t\n\tsz = tukar?v3.cross(sy,sx,):v3.cross(sx,sy,)\n\tsz = v3.normalize(sz)\n\treturn sz\n}\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "0",
+					"g": "155",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "\n}\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "0",
+					"frame": "0"
+				}
+			]
+		}
+	]
+]
